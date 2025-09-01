@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoAndroid">
         <activity
+            android:name=".PagePrincipalActivity"
+            android:exported="false" />
+        <activity
             android:name=".pantalla2"
             android:exported="false" />
         <activity
