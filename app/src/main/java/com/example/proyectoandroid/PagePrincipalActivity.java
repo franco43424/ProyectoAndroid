@@ -1,6 +1,5 @@
 package com.example.proyectoandroid;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,41 +10,48 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class PagePrincipalActivity extends AppCompatActivity {
 
-    //eso
-    Button btnReg;
-    Button button1;
-
+    Button btnSomos;
+    Button btnLista;
+    Button btnPerfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_page_principal);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        btnReg = findViewById(R.id.btnRegistrar);
-        // al parecer no es necesario colocar el onClick en el xml
-        btnReg.setOnClickListener(new View.OnClickListener() {
+        btnSomos = findViewById(R.id.btnSomos);
+        btnLista = findViewById(R.id.btnLista);
+        btnPerfil = findViewById(R.id.btnPerfil);
+
+        // completen las funciones teniendo en cuenta las ventanas y el nombre que les pusieron :v
+        /*
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,RegistrarActivity.class);
-                startActivity(intent);
+
             }
         });
 
-        button1 = findViewById(R.id.btn2);
-        button1.setOnClickListener(new View.OnClickListener() {
+        btnSomos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,PagePrincipalActivity.class);
-                startActivity(intent);
+
             }
         });
+
+        btnLista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        }); */
     }
 }
