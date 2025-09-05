@@ -3,6 +3,10 @@
     <string name="text1">Iniciar sesion</string>
     <string name="text2">pantalla 2 </string>
     <string name="text3">volver a pantalla 1 </string>
+    <string name="volver_al_men">Volver al Menú</string>
+    <string name="rut">RUT</string>
+    <string name="nombre">Nombre</string>
+    <string name="perfil_de_usuario">Perfil de Usuario</string>
 
 
 </resources>
